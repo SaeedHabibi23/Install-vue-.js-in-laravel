@@ -1,7 +1,7 @@
 <template>
     
     <div>
-        <h1> The New Page is here </h1>
+        <h1> The New Page two is here </h1>
     </div>
 
 
@@ -9,6 +9,6 @@
 
 <script>
   export default{
-    name: 'firstPage'
+    name: 'secondPage'
   }
 </script>

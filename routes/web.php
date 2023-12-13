@@ -13,15 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/admin/dashboard', function () {
-    return view('admin/dashboard');
-});
-
-Route::any('{slug}', function () {
-    return view('welcome');
-});
-
+Route::get('{any}' , function(){
+    return view('app');
+})->where('any' , '.*');

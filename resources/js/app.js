@@ -1,10 +1,11 @@
 import './bootstrap';
-import Vue from 'vue';
+import {createApp} from 'vue';
+import mainapp from './components/mainapp.vue'
 
-Vue.component('mainapp', require('./components/mainapp.vue').default);
+import router from './route.js'
 
-const app = new Vue({
-    el: '#app',
-});
+const app = createApp(mainapp)
 
-export default app;
+app.use(router)
+
+app.mount('#app')
