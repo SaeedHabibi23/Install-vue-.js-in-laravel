@@ -1,7 +1,10 @@
-require('./bootstrap');
-import {createApp} from 'vue'
+import './bootstrap';
+import Vue from 'vue';
 
-import App from './components/App.vue'
+Vue.component('mainapp', require('./components/mainapp.vue').default);
 
+const app = new Vue({
+    el: '#app',
+});
 
-createApp(App).mount('#app')
+export default app;
