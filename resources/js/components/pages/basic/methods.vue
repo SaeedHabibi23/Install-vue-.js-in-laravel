@@ -9,7 +9,7 @@
             <p> {{ blog.post }} </p>
         </div>
 
-
+//some codes are disabled or comment at this area
         <div>
             <p v-if="showItems">If show items is true</p>
             <p v-else>If show items is false</p>
